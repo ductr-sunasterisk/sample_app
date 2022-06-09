@@ -1,0 +1,35 @@
+vi:
+  layouts:
+    application:
+      hello: Xin chao
+      title: Trang chủ
+    footer:
+      about: Giới thiệu
+      contact: Liên hệ
+      new: Tin tức
+      by: bởi
+    header:
+      sample_app: Sample App
+      home: Trang chủ
+      help: Trợ giúp
+  static_pages:
+    home:
+      home: Trang chu
+      english: English
+      vietnamese: Tieng Viet
+      sample_app: Ung dung mau
+      describe_html: Day la describe_html
+      welcome: Chào mừng đến với Sample app
+      page_for: Đây là trang web dành cho
+      ruby_tut: Hướng dẫn Ruby On Rails
+      sample_app: Ứng dụng mẫu
+      sign_up: Đăng ký ngay
+    help:
+      title: Trợ giúp
+      describe_html: Đây là trang web dành cho
+      sample_app: Ứng dụng mẫu
+      ruby_tut: Hướng dẫn Ruby On Rails
+    contact:
+      contact: Trang liên hệ
+      text: "Tìm hiểu thêm hướng dẫn Ruby On Rails cho Ứng dụng mẫu tại:"
+      contact_page: Trang hướng dẫn
