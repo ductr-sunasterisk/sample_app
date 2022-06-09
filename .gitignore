@@ -10,6 +10,9 @@
 /test/version_tmp/
 /tmp/
 /test
+.framgia-ci-reports/
+.framgia-ci-result.temp.yml
+/log/
 # Used by dotenv library to load environment variables.
 # .env
 
@@ -23,6 +26,7 @@ build/
 *.bridgesupport
 build-iPhoneOS/
 build-iPhoneSimulator/
+
 
 ## Specific to RubyMotion (use of CocoaPods):
 #
