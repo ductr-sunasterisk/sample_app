@@ -1,0 +1,17 @@
+vi:
+  layouts:
+    application:
+      hello: Xin chao
+      title: Trang chủ
+  static_pages:
+    home:
+      home: Trang chu
+      english: English
+      vietnamese: Tieng Viet
+      sample_app: Ung dung mau
+      describe_html: Day la describe_html
+    help:
+      title: Trợ giúp
+      describe_html: Đây là trang web dành cho
+      sample_app: Ứng dụng mẫu
+      ruby_tut: Hướng dẫn Ruby On Rails
