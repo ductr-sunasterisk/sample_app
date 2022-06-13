@@ -1,1 +1,5 @@
-@import url("custom.scss");
+/*
+ *= require_tree .
+ *= require_self
+ *= require custom
+*/

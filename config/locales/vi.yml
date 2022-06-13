@@ -3,11 +3,14 @@ vi:
     application:
       hello: Xin chao
       title: Trang chủ
+      base_title: Ứng dụng mẫu Ruby On Rails
     footer:
       about: Giới thiệu
       contact: Liên hệ
-      new: Tin tức
-      by: bởi
+      news: Tin tức
+      left: "%{rails_link} được viết bởi %{michale_link}"
+      rails_txt: "Ruby on Rails Tutorial"
+      michale_txt: "Michael Hartl"
     header:
       sample_app: Sample App
       home: Trang chủ
@@ -32,4 +35,4 @@ vi:
     contact:
       contact: Trang liên hệ
       text: "Tìm hiểu thêm hướng dẫn Ruby On Rails cho Ứng dụng mẫu tại:"
-      contact_page: Trang hướng dẫn
+      title: Trang hướng dẫn
