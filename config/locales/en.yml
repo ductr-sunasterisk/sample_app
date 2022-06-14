@@ -5,6 +5,14 @@ en:
       vietnamese: Viet Nam
       english: English
       title: Home Page
+      base_title: Ruby on Rails Sample App
+    footer:
+      left: "The %{rails_link} by %{michale_link}"
+      rails_txt: "Ruby on Rails Tutorial"
+      michale_txt: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
   static_pages:
     home:
       home: Home page
@@ -12,8 +20,17 @@ en:
       vietnamese: Tieng Viet
       sample_app: Sample app
       describe_html: This is describe_html
+      welcome: Welcome to the Sample App
+      page_for: This is the home page for the
+      ruby_tut: Ruby On Rails Tutorial
+      sample_app: Sample App
+      sign_up: Sign up now
     help:
       title: Help page
       describe_html: This is the Website for
       sample_app: Sample app
       ruby_tut: Ruby On Rails Tutorial
+    contact:
+      contact: Contact Page
+      text: Contact the Ruby on Rails Tutorial about the sample app at the
+      contact_page: Tutorial Page

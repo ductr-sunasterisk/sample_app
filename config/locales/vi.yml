@@ -3,6 +3,18 @@ vi:
     application:
       hello: Xin chao
       title: Trang chủ
+      base_title: Ứng dụng mẫu Ruby On Rails
+    footer:
+      about: Giới thiệu
+      contact: Liên hệ
+      news: Tin tức
+      left: "%{rails_link} được viết bởi %{michale_link}"
+      rails_txt: "Ruby on Rails Tutorial"
+      michale_txt: "Michael Hartl"
+    header:
+      sample_app: Sample App
+      home: Trang chủ
+      help: Trợ giúp
   static_pages:
     home:
       home: Trang chu
@@ -10,8 +22,17 @@ vi:
       vietnamese: Tieng Viet
       sample_app: Ung dung mau
       describe_html: Day la describe_html
+      welcome: Chào mừng đến với Sample app
+      page_for: Đây là trang web dành cho
+      ruby_tut: Hướng dẫn Ruby On Rails
+      sample_app: Ứng dụng mẫu
+      sign_up: Đăng ký ngay
     help:
       title: Trợ giúp
       describe_html: Đây là trang web dành cho
       sample_app: Ứng dụng mẫu
       ruby_tut: Hướng dẫn Ruby On Rails
+    contact:
+      contact: Trang liên hệ
+      text: "Tìm hiểu thêm hướng dẫn Ruby On Rails cho Ứng dụng mẫu tại:"
+      title: Trang hướng dẫn
