@@ -4,6 +4,7 @@ vi:
       hello: Xin chao
       title: Trang chủ
       base_title: Ứng dụng mẫu Ruby On Rails
+      not_found: Yêu cầu không hợp lệ, không tìm thấy tài nguyên !!!
     footer:
       about: Giới thiệu
       contact: Liên hệ
@@ -36,3 +37,14 @@ vi:
       contact: Trang liên hệ
       text: "Tìm hiểu thêm hướng dẫn Ruby On Rails cho Ứng dụng mẫu tại:"
       title: Trang hướng dẫn
+  users:
+    new:
+      sign_up: Sign Up
+      name: Name
+      email: Email
+      password: Password
+      password_confirmation: Password Confirmation
+      submit: Create my account
+  shared:
+    error: Errors !!!
+    text_alert: Have some errors

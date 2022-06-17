@@ -6,6 +6,7 @@ en:
       english: English
       title: Home Page
       base_title: Ruby on Rails Sample App
+      not_found: Illegal request, resources not found !!!
     footer:
       left: "The %{rails_link} by %{michale_link}"
       rails_txt: "Ruby on Rails Tutorial"
@@ -34,3 +35,14 @@ en:
       contact: Contact Page
       text: Contact the Ruby on Rails Tutorial about the sample app at the
       contact_page: Tutorial Page
+  users:
+    new:
+      sign_up: Sign Up
+      name: Name
+      email: Email
+      password: Password
+      password_confirmation: Password Confirmation
+      submit: Create my account
+  shared:
+    error: Errors !!!
+    text_alert: Have some errors
