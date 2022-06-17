@@ -14,4 +14,11 @@ class ApplicationController < ActionController::Base
   def default_url_options
     {locale: I18n.locale}
   end
+
+  rescue_from ActiveRecord::RecordNotFound, with: :not_found
+
+  def not_found
+    flash[:danger] = t "layouts.application.not_found"
+    redirect_to root_path
+  end
 end
