@@ -3,3 +3,6 @@
  *= require_self
  *= require custom
 */
+*{
+  margin: 0;
+}
