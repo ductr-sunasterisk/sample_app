@@ -16,6 +16,12 @@ vi:
       sample_app: Sample App
       home: Trang chủ
       help: Trợ giúp
+      users: Nguoi dung
+      account: Tai Khoan
+      setting: Cai dat
+      profile: Ho so
+      log_out: Dang xuat
+      log_in: Dang nhap
   static_pages:
     home:
       home: Trang chu
@@ -47,4 +53,11 @@ vi:
       submit: Create my account
   shared:
     error: Errors !!!
-    text_alert: Have some errors
+    text_alert: "Co %{err} loi da xay ra"
+  sessions:
+    new:
+      log_in: Dang nhap
+      new_user: Nguoi dung moi?
+      sign_up_now: Dang ky ngay
+    create:
+      invalid_email_password_combination: Ten dang nhap hoac mat khau khong dung
