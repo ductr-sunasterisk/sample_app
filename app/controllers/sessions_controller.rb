@@ -5,6 +5,8 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params.dig(:session, :email)&.downcase
     if user&.authenticate params.dig(:session, :password)
+      log_in user
+      remember user
       redirect_to :root
     else
       flash.now[:danger] = t ".invalid_email_password_combination"
