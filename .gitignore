@@ -13,6 +13,7 @@
 .framgia-ci-reports/
 .framgia-ci-result.temp.yml
 /log/
+.idea/
 # Used by dotenv library to load environment variables.
 # .env
 
@@ -64,6 +65,8 @@ build-iPhoneSimulator/
 
 /public/packs
 /public/packs-test
+/public/assets/
+/public/assets/controllers
 /node_modules
 /yarn-error.log
 yarn-debug.log*

@@ -14,6 +14,15 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+    header:
+      home: Home
+      help: Help
+      log_in: Log in
+      users: Users
+      account: Account
+      setting: Setting
+      profile: Profile
+      log_out: Log Out
   static_pages:
     home:
       home: Home page
@@ -45,4 +54,11 @@ en:
       submit: Create my account
   shared:
     error: Errors !!!
-    text_alert: Have some errors
+    text_alert: "Have %{err} errors:  "
+  sessions:
+    new:
+      log_in: Log In
+      new_user: New Users?
+      sign_up_now: Sign Up Now
+    create:
+      invalid_email_password_combination: Email or password is invalid

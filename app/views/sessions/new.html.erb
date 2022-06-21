@@ -1,0 +1,18 @@
+<% provide :title, t(".log_in") %>
+  <h1 class = "text-center">Log in</h1>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <%= form_for :session, url: login_path do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control mb-2" %>
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control mb-2" %>
+    <div class = "row">
+      <div class = "col text-center mb-2 mt-2">
+        <%= f.submit t(".log_in"), class: "btn btn-primary" %>
+      </div>
+    </div>
+    <% end %>
+    <p><%= t ".new_user" %><%= link_to t(".sign_up_now"), signup_path %></p>
+  </div>
+</div>

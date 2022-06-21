@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
 
+  rescue_from ActiveRecord::RecordNotFound, with: :not_found
+
   private
   def set_locale
     locale = params[:locale].to_s.strip.to_sym
@@ -14,8 +16,6 @@ class ApplicationController < ActionController::Base
   def default_url_options
     {locale: I18n.locale}
   end
-
-  rescue_from ActiveRecord::RecordNotFound, with: :not_found
 
   def not_found
     flash[:danger] = t "layouts.application.not_found"
