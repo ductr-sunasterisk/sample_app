@@ -60,5 +60,6 @@ en:
       log_in: Log In
       new_user: New Users?
       sign_up_now: Sign Up Now
+      remember_me: Remember Me
     create:
       invalid_email_password_combination: Email or password is invalid

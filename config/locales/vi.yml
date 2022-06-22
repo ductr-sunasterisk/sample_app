@@ -59,5 +59,6 @@ vi:
       log_in: Dang nhap
       new_user: Nguoi dung moi?
       sign_up_now: Dang ky ngay
+      remember_me: Ghi nho dang nhap
     create:
       invalid_email_password_combination: Ten dang nhap hoac mat khau khong dung
