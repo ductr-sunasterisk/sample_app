@@ -5,10 +5,13 @@ gem "bcrypt"
 gem "bootsnap", require: false
 gem "bootstrap", "~> 5.1.3"
 gem "config"
+gem "faker"
+gem "figaro"
 gem "importmap-rails"
 gem "jbuilder", "~> 2.7"
 gem "jquery-rails"
 gem "mysql2", "~> 0.5"
+gem "pagy"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.3"
 gem "rails-i18n", "~> 7.0.0"
@@ -18,7 +21,6 @@ gem "stimulus-rails"
 gem "turbolinks", "~> 5"
 gem "turbo-rails"
 gem "webpacker", "~> 5.0"
-
 group :development, :test do
   gem "rubocop", "~> 1.26", require: false
   gem "rubocop-checkstyle_formatter", require: false

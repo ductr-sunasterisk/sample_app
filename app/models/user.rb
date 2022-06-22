@@ -1,6 +1,9 @@
 class User < ApplicationRecord
+  attr_accessor :remember_token, :activation_token
+
+  scope :latest_users, ->{order(created_at: :desc)}
   before_save :downcase_email
-  attr_accessor :remember_token
+  before_create :create_activation_digest
 
   validates(:name, presence: true, length:
     {maximum: Settings.user.name.max_length})
@@ -18,17 +21,16 @@ class User < ApplicationRecord
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
-        BCrypt::Engine::MIN_COST
-      else
-        BCrypt::Engine.cost
-      end
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
       BCrypt::Password.create string, cost: cost
     end
 
     def new_token
       SecureRandom.urlsafe_base64
     end
-
   end
 
   def forget
@@ -46,11 +48,13 @@ class User < ApplicationRecord
     BCrypt::Password.new(remember_digest).is_password? remember_token
   end
 
-
-
   private
   def downcase_email
     email.downcase!
   end
 
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest activation_token
+  end
 end

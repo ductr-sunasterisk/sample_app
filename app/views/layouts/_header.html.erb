@@ -23,11 +23,12 @@
            </a>
            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
              <li><%= link_to t(".profile"), current_user, class: "dropdown-item" %></li>
-             <li><%= link_to t(".setting"), "#", class: "dropdown-item" %></li>
+             <li><%= link_to t(".setting"), edit_user_path(current_user), class: "dropdown-item" %></li>
              <li><hr class="dropdown-divider"></li>
              <li><%= link_to t(".log_out"), logout_path, method: :delete, class: "dropdown-item" %></li>
             </ul>
           </li>
+          <li class="nav-item dropdown"><%= link_to t(".users_list"), users_path, class: "nav-link" %></li>
         <% else %>
           <li><%= link_to t(".log_in"), login_path, class: "nav-link" %></li>
         <% end %>

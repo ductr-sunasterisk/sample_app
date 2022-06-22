@@ -23,6 +23,7 @@ en:
       setting: Setting
       profile: Profile
       log_out: Log Out
+      users_list: List User
   static_pages:
     home:
       home: Home page
@@ -52,6 +53,16 @@ en:
       password: Password
       password_confirmation: Password Confirmation
       submit: Create my account
+    edit:
+      submit: Update my account
+      change: Change Avatar
+      title: Edit User
+      update: Update User
+    user:
+      delete: Delete
+      log_in_first: Please Login.
+      delete_success: Delete Success
+      delete_fail: Delete Fail
   shared:
     error: Errors !!!
     text_alert: "Have %{err} errors:  "

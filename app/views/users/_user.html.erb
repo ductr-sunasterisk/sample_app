@@ -1,0 +1,7 @@
+<li>
+  <%= gravatar_for user, size: Settings.user.gravatar.size %>
+  <%= link_to user.name, user %>
+  <% if show_delete?(user) %>
+    | <%= button_to t(".delete"), user_path(user), method: :delete %>
+  <% end %>
+</li>
