@@ -45,6 +45,9 @@ en:
       contact: Contact Page
       text: Contact the Ruby on Rails Tutorial about the sample app at the
       contact_page: Tutorial Page
+    mailer:
+      message_active: Active your account to use our service
+      active: Active
   users:
     new:
       sign_up: Sign Up
@@ -63,6 +66,7 @@ en:
       log_in_first: Please Login.
       delete_success: Delete Success
       delete_fail: Delete Fail
+      check_mail: Please check email to active your account
   shared:
     error: Errors !!!
     text_alert: "Have %{err} errors:  "
@@ -74,3 +78,6 @@ en:
       remember_me: Remember Me
     create:
       invalid_email_password_combination: Email or password is invalid
+  user_mailer:
+    account_activation:
+      subject: Account Activation

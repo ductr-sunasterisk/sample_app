@@ -9,3 +9,7 @@ user:
     min_length: 6
   gravatar:
     size: 80
+footer:
+  rails_link: https://www.railstutorial.org
+  michale_link: https://www.michaelhartl.com/
+  rails_news_link: https://news.railstutorial.org/
