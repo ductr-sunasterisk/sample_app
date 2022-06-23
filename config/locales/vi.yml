@@ -44,6 +44,9 @@ vi:
       contact: Trang liên hệ
       text: "Tìm hiểu thêm hướng dẫn Ruby On Rails cho Ứng dụng mẫu tại:"
       title: Trang hướng dẫn
+    mailer:
+      message_active: Active your account to use our service
+      active: Active
   users:
     new:
       sign_up: Sign Up
@@ -62,6 +65,7 @@ vi:
       log_in_first: Vui long dang nhap
       delete_success: Xoa thanh cong
       delete_fail: Xoa that bai
+      check_mail: Vui long kiem tra email cua ban de kich hoat tai khoan
   shared:
     error: Errors !!!
     text_alert: "Co %{err} loi da xay ra"
@@ -73,3 +77,6 @@ vi:
       remember_me: Ghi nho dang nhap
     create:
       invalid_email_password_combination: Ten dang nhap hoac mat khau khong dung
+  user_mailer:
+    account_activation:
+      subject: Xac nhan tai khoan

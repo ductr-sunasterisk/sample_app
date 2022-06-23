@@ -42,10 +42,19 @@ class User < ApplicationRecord
     update_column :remember_digest, User.digest(remember_token)
   end
 
-  def authenticated? remember_token
-    return false unless remember_token
+  def authenticated? attr, token
+    digest = send "#{attr}_digest"
+    return false unless digest
 
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    BCrypt::Password.new(digest).is_password? token
+  end
+
+  def send_mail_active
+    UserMailer.account_activation(self).deliver_now
+  end
+
+  def activate
+    update_columns activated: true, activated_at: Time.zone.now
   end
 
   private

@@ -19,9 +19,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      UserMailer.account_activation(@user).deliver_now
-      flash[:info] = "Please check your email to activate your account."
-      redirect_to login_url
+      @user.send_mail_active
+      flash[:info] = t "users.user.check_mail"
+      redirect_to :root
     else
       render :new
     end
@@ -78,9 +78,9 @@ class UsersController < ApplicationController
   end
 
   def load_user
-    unless @user = User.find_by(id: params[:id])
-      flash[:danger] = t ".bad_request"
-      redirect_to :root
-    end
+    return if @user = User.find_by(id: params[:id])
+
+    flash[:danger] = t ".bad_request"
+    redirect_to :root
   end
 end
