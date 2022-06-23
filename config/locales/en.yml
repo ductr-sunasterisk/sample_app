@@ -81,3 +81,9 @@ en:
   user_mailer:
     account_activation:
       subject: Account Activation
+  password_resets:
+    edit:
+      title: Update password
+      update_password: Update Password
+      password: Password
+      confirmation: Confirmation

@@ -13,3 +13,8 @@ footer:
   rails_link: https://www.railstutorial.org
   michale_link: https://www.michaelhartl.com/
   rails_news_link: https://news.railstutorial.org/
+time:
+  expiration_password: 2
+microposts:
+  content:
+    max_lenght: 150

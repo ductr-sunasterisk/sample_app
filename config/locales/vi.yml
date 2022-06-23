@@ -80,3 +80,9 @@ vi:
   user_mailer:
     account_activation:
       subject: Xac nhan tai khoan
+  password_resets:
+    edit:
+      title: Cap nhat mat khau
+      update_password: Cap nhat mat khau
+      password: Mat khau
+      confirmation: Xac nhan mat khau
