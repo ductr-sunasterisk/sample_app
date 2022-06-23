@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Pagy::Backend
   before_action :set_locale
 
   rescue_from ActiveRecord::RecordNotFound, with: :not_found

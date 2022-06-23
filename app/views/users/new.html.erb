@@ -1,22 +1,8 @@
 <% provide(:title,  t(".sign_up") ) %>
+<% provide(:button_text,  t(".submit") ) %>
 <h1 class = "text-center"> <%= t(".sign_up") %> </h1>
 <div class="row">
   <div class="col-md-6 offset-md-3">
-    <%= form_for(@user) do |f| %>
-      <%= render "/shared/error_mesages" %>
-      <%= f.label :name, t(".name") %>
-      <%= f.text_field :name, class: "form-control mb-2" %>
-      <%= f.label :email, t(".email") %>
-      <%= f.email_field :email, class: "form-control mb-2" %>
-      <%= f.label :password, t(".password") %>
-      <%= f.password_field :password, class: "form-control mb-2" %>
-      <%= f.label :password_confirmation, t(".password_confirmation") %>
-      <%= f.password_field :password_confirmation, class: "form-control mb-2" %>
-      <div class = "row">
-        <div class = "col text-center">
-          <%= f.submit t(".submit") , class: "btn btn-primary" %>
-        </div>
-      </div>
-      <%end%>
+    <%= render "form" %>
   </div>
 </div>

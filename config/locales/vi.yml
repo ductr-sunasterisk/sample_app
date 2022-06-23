@@ -22,6 +22,7 @@ vi:
       profile: Ho so
       log_out: Dang xuat
       log_in: Dang nhap
+      users_list: Danh sach nguoi dung
   static_pages:
     home:
       home: Trang chu
@@ -51,6 +52,16 @@ vi:
       password: Password
       password_confirmation: Password Confirmation
       submit: Create my account
+    edit:
+      submit: Cap nhat tai khoan
+      change: Thay doi avatar
+      title: Cap nhat
+      update: Cap nhat tai khoan
+    user:
+      delete: Xoa nguoi dung
+      log_in_first: Vui long dang nhap
+      delete_success: Xoa thanh cong
+      delete_fail: Xoa that bai
   shared:
     error: Errors !!!
     text_alert: "Co %{err} loi da xay ra"
