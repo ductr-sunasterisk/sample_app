@@ -1,0 +1,19 @@
+<% provide(:title, t(".title")) %>
+<h1 class = "text-center">Reset password</h1>
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <%= form_for(@user, url: password_reset_path(params[:id])) do |f| %>
+      <%= render "shared/error_mesages" %>
+      <%= hidden_field_tag :email, @user.email %>
+      <%= f.label :password, t(".password") %>
+      <%= f.password_field :password, class: "form-control mb-2" %>
+      <%= f.label :password_confirmation, t(".confirmation") %>
+      <%= f.password_field :password_confirmation, class: "form-control mb-2" %>
+      <div class = "row">
+        <div class = "col text-center">
+          <%= f.submit t(".update_password"), class: "btn btn-primary mb-2" %>
+        </div>
+      </div>
+   <% end %>
+ </div>
+</div>

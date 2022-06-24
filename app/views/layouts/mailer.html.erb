@@ -1,7 +1,12 @@
-<h1>Sample App</h1>
-<p> <%= t ".hi" %> <%= @user.name %>,</p>
-<p>
-  <%= t ".message_active" %>
-</p>
-<%= link_to t(".active"), edit_account_activation_url(@user.activation_token,
-email: @user.email) %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+    </style>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
